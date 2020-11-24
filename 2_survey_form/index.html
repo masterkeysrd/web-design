@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Developer Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="content">
+      <div class="title-container">
+        <h1 class="mb-0" id="title">Developer Forms</h1>
+        <p class="mt-0" id="description">Thanks for fill this survey.</p>
+      </div>
+
+      <div class="form-container">
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              required
+              placeholder="John Doe"
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              class="form-control"
+              id="email"
+              type="email"
+              required
+              placeholder="johndoe@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Years of experience</label>
+            <input
+              class="form-control"
+              id="number"
+              type="number"
+              min="1"
+              max="20"
+              required
+              placeholder="1"
+            />
+          </div>
+          <div class="form-group">
+            <label id="combo-dropdown" for="dropdown"
+              >Which option best describes your current role?</label
+            >
+            <select class="form-control" id="dropdown">
+              <option value="" disabled>Select current role</option>
+              <option>Quality Assurance</option>
+              <option>Software Developer</option>
+              <option>Software Architect</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>What is your level?</label>
+            <label>
+              <input type="radio" name="level" value="junior" /> Junior
+            </label>
+            <label> <input type="radio" name="level" value="mid" /> Mid </label>
+            <label>
+              <input type="radio" name="level" value="senior" /> Senior
+            </label>
+          </div>
+          <div class="form-group">
+            <label id="combo-label" for="combo">Which part you like?</label>
+            <div>
+              <label> <input type="checkbox" value="csharp" /> C# </label>
+              <label> <input type="checkbox" value="java" /> Java </label>
+              <label> <input type="checkbox" value="python" /> Python </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label id="textarea-label" for="textarea">Write something fun</label>
+            <textarea class="form-control" id="textarea"></textarea>
+          </div>
+          <div class="button-container mt-2">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
